@@ -19,7 +19,11 @@ function getName(){
     lastName = prompt("Enter your last name: ");
 
     fullName = firstName + " " + lastName;
-
+    
     document.write("Hello " + fullName);
+}
+
+function buildingAlert(){
+    alert("This website is under construction.");
 }
 
