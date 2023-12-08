@@ -26,6 +26,7 @@ function initBoard() {
 }
 
 function shadeKeyBoard(letter, color) {
+
   for (const elem of document.getElementsByClassName("keyboard-button")) {
     if (elem.textContent === letter) {
       let oldColor = elem.style.backgroundColor;
@@ -196,5 +197,3 @@ document.getElementById("keyboard-cont").addEventListener("click", (e) => {
 
   document.dispatchEvent(new KeyboardEvent("keyup", { key: key }));
 });
-
-initBoard();
